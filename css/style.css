@@ -101,18 +101,41 @@ body {
 
 .sales__item {
     box-sizing: border-box;
-    padding: 20px;
     width: 360px;
     min-height: 260px;
-    background-color: var(--sales-bkg-color);
 }
 
-/*
 .sales__item-woman {
-    background-image: ;
+    background-image: url(img/woman_sales.jpg);
 }
-*/
+
+.sales__item-man {
+    background-image: url(img/man_sales.jpg);
+}
+
+.sales__item-kids {
+    background-image: url(img/kids.jpg);
+}
+
+.sales__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 105px 0 0 0;
+}
+
+.sales__title {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--dark-pink);
+}
 
 .sales__item-accesories {
 width: 100%;
+margin: 30px 0 0 0;
 }
