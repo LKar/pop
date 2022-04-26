@@ -8,6 +8,7 @@
     --light-grey: #f8f8f8;
     --dark-grey: #5d5d5d;
     --info-: #fbfbfb;
+    --email-: #e1e1e1;
 }
 
 body {
@@ -41,13 +42,23 @@ body {
     display: flex;   
 }
 
-.header__link {
+.header__icon {
     margin: 0 0 0 34px;  
 }
 
 .header__button {
     border: none;
     background-color: transparent;
+}
+
+.icon {
+    fill: var(--email-);
+    cursor: pointer;
+}
+
+.icon:hover,
+.icon:focus {
+    fill: var(--dark-pink);
 }
 
 .header__nav {
@@ -214,18 +225,26 @@ body {
 }
 
 .catalog__button-wrp {
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .catalog__button {
-font-size: 16px;
-line-height: 19px;
-color: var(--dark-pink);
-background-color: transparent;
-padding: 15px 39px;
-border: 1px solid var(--dark-pink);
-margin: 0 0 95px;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--dark-pink);
+    background-color: transparent;
+    padding: 15px 39px;
+    border: 1px solid var(--dark-pink);
+    margin: 0 0 95px;
+    cursor: pointer;
+}
+
+.catalog__button:hover,
+.catalog__button:focus {
+    background-color: var(--dark-pink);
+    color: var(--white);
+    outline: none;
 }
 
 .info {
@@ -280,6 +299,7 @@ margin: 0 0 95px;
     background-image: url(../img/fon.png);
     min-height: 448px;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .footer__woman {
@@ -313,9 +333,9 @@ margin: 0 0 95px;
     font-size: 24px;
     font-weight: 700;
     line-height: 38px;
-  margin: 150px 230px 32px 0;
-  text-transform: uppercase;
-  text-align: center;
+    margin: 150px 230px 32px 0;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .promotion {
@@ -325,14 +345,31 @@ margin: 0 0 95px;
     line-height: 30px;
 }
 
-.email {
-    padding: 14px 130px 14px 22px;
-    border-radius: 50px;
+.footer__email {
+    padding: 16px 84px 16px 22px;
+    border-radius: 50px 0px 0px 50px;
+    border: none;
+    background-color: var(--email-);
 }
 
 .footer__button {
     padding: 14px 14px 14px 16px;
-    border-radius: 50px;
+    border-radius: 0px 50px 50px 0px;
+    border: none;
+    background-color: var(--dark-pink);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.footer__button:hover,
+.footer__button:focus {
+    background-color: var(--white);
+    color: var(--dark-pink);
+    outline: 1px solid var(--dark-pink);
+}
+
+.footer__button-wrp{
+    display: flex;
 }
 
 .footer__rights-wrp {
@@ -357,4 +394,9 @@ margin: 0 0 95px;
 
 .footer__social-item {
     padding: 0 7px 0 0;
+}
+
+.footer__social-item:hover,
+.footer__social-item:focus {
+    opacity: 0.5;
 }
