@@ -135,7 +135,12 @@
                         <input class="input__text" type="text" id="name" required placeholder="First Name">
                         <label for="name"></label>
                         <input class="input__text" type="text" id="name" required placeholder="Last Name">
-
+                        <div class="registration__sex-wrp">
+                            <input class="registration__sex" type="radio" id="sex" name="sex" value="sex">
+                            <label class="registration__sex-text" for="sex">Male</label>
+                            <input class="registration__sex" type="radio" id="sex" name="sex" value="sex">
+                            <label class="registration__sex-text" for="sex2">Female</label>
+                        </div>
                     </fieldset>
                     <fieldset>
                         <legend class="header__name">Login details</legend>
@@ -148,16 +153,13 @@
                             lowercase
                             letters</p>
                     </fieldset>
-                    <button type="submit">join now</button>
+                    <button class="registration__button" type="submit">join now</button>
                 </form>
             </div>
-            <div>
+            <div class="registration__element-wrp">
                 <h2 class="registration__headline">loyalty has its perks</h2>
                 <p class="registration__text">Get in on the loyalty program where you can earn points and unlock serious
-                    perks. Starting with these
-                    as
-                    soon
-                    as you join:</p>
+                    perks. Starting with these as soon as you join:</p>
                 <ul class="registration__list">
                     <li class="registration__item">
                         <p>15% off welcome offer</p>
@@ -180,7 +182,55 @@
     </section>
 
     <footer>
-
+        <section class="footer">
+            <div class="container">
+                <ul class="footer__info">
+                    <li class="footer__woman">
+                        <img class="footer__img" src="img/woman.png" alt="woman">
+                        <p class="footer__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span
+                                class="footer__text-italic"> a pulvinar
+                                purus
+                                condimentum</span>“</p>
+                    </li>
+                    <li class="footer__subscribe">
+                        <p class="footer__comment">subscribe <span class="promotion"> for our newletter and
+                                promotion</span>
+                        </p>
+                        <form class="footer__button-wrp" action="">
+                            <input class="footer__email" type="email" placeholder="Enter Your Email">
+                            <button class="footer__button">Subscribe</button>
+                        </form>
+                    </li>
+                </ul>
+        </section>
+        <section class="footer__rights-wrp">
+            <div class="container rights-wrp">
+                <p class="footer__rights">© 2021 Brand All Rights Reserved.</p>
+                <ul class="footer__social">
+                    <li class="footer__social-item">
+                        <a footer__social-i href="#">
+                            <img src="img/facebook.svg" alt="facebook">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#">
+                            <img src="img/instagram.svg" alt="instagram">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#">
+                            <img src="img/pinterest.svg" alt="pinterest">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a href="#">
+                            <img src="img/twitter.svg" alt="twitter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        </div>
     </footer>
 </body>
 
