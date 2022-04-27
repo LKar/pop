@@ -11,7 +11,7 @@
     --email-: #e1e1e1;
     --registration-: #f8f3f4;
     --name: #b1b1b1;
-
+    --sex: #a4a4a4
 }
 
 body {
@@ -456,11 +456,10 @@ body {
 
 .registration-wrp {
     display: flex;
-    align-items: center;
 }
 
-.registration__element {
-    margin: 60px 0 96px 0;
+.registration__element-wrp {
+    margin: 64px 0 96px 0;
 }
 
 .registration__list {
@@ -503,16 +502,23 @@ body {
     margin: 23px 0;
 }
 
+.input__text {
+    padding: 13px 200px 16px 17px;
+    margin: 20px 128px 0 0;
+    outline: 1px solid #A4A4A4;
+    border: none;
+}
+
 .input__text::placeholder {
     font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 13px;
+    line-height: 16px;
     color: var(--name);
 }
 
-.input__text {
-    padding: 13px 277px 16px 17px;
-    margin: 20px 128px 0 0;
+.input__text:hover,
+.input__text:focus {
+    border: none;
 }
 
 .registration__comment {
@@ -522,4 +528,56 @@ body {
     color: var(--name);
     margin: 15px 0 39px 0;
     width: 359px;
+}
+
+.registration__sex {
+    appearance: none;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    border: 1px solid var(--sex);
+    transition: 0.2s all linear;
+    outline: none;
+    position: relative;
+    top: 2px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.registration__sex:checked {
+    border: 6px solid black;
+}
+
+.registration__sex-wrp {
+    margin: 30px 0 33px 0;
+}
+
+.registration__sex-text {
+    margin: 0 10px 0 10px;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: var(--black);
+}
+
+.header__name {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.registration__button {
+    padding: 16px 66px 17px 29px;
+    text-transform: uppercase;
+    background-color: var(--dark-pink);
+    color: var(--white);
+    border: none;
+}
+
+.registration__button:hover,
+.registration__button:focus,
+.registration__button:active {
+    outline: 1px solid var(--dark-pink);
+    background-color: var(--white);
+    color: var(--dark-pink);
 }
