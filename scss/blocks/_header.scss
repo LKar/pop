@@ -1,0 +1,88 @@
+.header {
+    background-color: $black;
+    position: relative;
+}
+
+.header__logo {
+    margin: 0 41px 0 0;
+}
+
+.header__wrp {
+    display: flex; 
+    justify-content: space-between;
+    min-height: 75px;
+    align-items: center;
+}
+
+.header__logo-wrp {
+    display: flex;
+    align-items: center;
+}   
+
+.header__list {
+    display: flex;   
+    align-items: center;
+}
+
+.header__icon {
+    margin: 0 0 0 34px;  
+}
+
+.icon {
+    fill: $email;
+    cursor: pointer;
+}
+
+.icon:hover,
+.icon:active,
+.icon:focus {
+    fill: $dark-pink;
+}
+
+.header__burger {
+    border: none;
+    background-color: transparent;
+}
+
+.header__title {
+    text-transform: uppercase;
+    color: $black;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 9px 0 24px 34px;
+}
+
+.header__nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: 232px;
+    min-height: 764px;
+}
+
+.header__burger:hover + .header__nav {
+    display: block;
+}
+
+.header__burger:focus + .header__nav {
+    display: block;
+}
+
+.header__registration {
+    text-transform: uppercase;
+    color: $dark-pink;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;    
+    margin: 60px 0;
+}
+
+.header__name {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+}
+

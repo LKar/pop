@@ -1,0 +1,47 @@
+.info {
+    background-color: $black;
+    max-height: 341px;
+    width: 100%;
+}
+
+.info__list {
+    padding: 104px 0;
+}
+
+.info__img-delivery {
+    padding-bottom: 28px;
+}
+
+.info__img-sale {
+   padding-bottom: 19px;
+}
+
+.info__img-assurance {
+    padding-bottom: 25px;
+}
+
+.info__list-wrp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info__item {
+    text-align: center;
+    padding: 0 30px 0 0;
+}
+
+.info__header {
+    color: $info;
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+}
+
+.info__text {
+    color: $info;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    padding: 16px 0 104px 0;
+}

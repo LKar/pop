@@ -1,0 +1,138 @@
+.catalog__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 48px 0 48px 0;
+}
+
+.catalog__item {
+    box-sizing: border-box;
+    width: 360px;
+    min-height: 580px;
+    background-color: $light-grey;
+    margin: 0 0 30px 0;
+    text-align: left;
+}
+
+.button__cart {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: transparent;
+    border: 1px solid $white;
+    padding: 8px 16px 11px 7px;
+    text-align: center;
+    color: $white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+    fill: $white;
+}
+
+.button__cart-icon {
+    margin: 1px 3px -7px 8px;
+}
+
+.cart-wrapper-overlay {
+    position: relative;
+}
+
+.cart-wrapper-overlay:before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    display: none;
+    background-color: $black;
+    opacity: 86%;
+    top: 0;
+    min-height: 420px;
+}
+
+.cart:hover .button__cart,
+.cart:hover .cart-wrapper-overlay:before {
+    display: block;
+}
+
+.button__cart:active {
+color: $dark-pink;
+border: 1PX SOLID $dark-pink;
+fill: $dark-pink;
+}
+
+.button__cart-icon:active {
+    color: $dark-pink;   
+}
+
+.catalog__title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: $black;
+    text-align: center;
+}
+
+.catalog__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: $grey;
+    text-align: center;
+    margin: 6px 0 0 0;
+}
+
+.catalog__item-link {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $black;
+    margin: 0 0 0 18px;
+}
+
+.catalog__item-img {
+    margin: 0 0 25px 0;
+}
+
+.catalog__description {
+    color: $dark-grey;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 12px 0 18px 18px;
+}
+
+.catalog__price {
+    margin: 0 0 18px 20px;
+    color: $dark-pink;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.catalog__button-wrp {
+    display: flex;
+    justify-content: center;
+}
+
+.catalog__button {
+    font-size: 16px;
+    line-height: 19px;
+    color: $dark-pink;
+    background-color: transparent;
+    padding: 15px 39px;
+    border: 1px solid $dark-pink;
+    margin: 0 0 95px;
+    cursor: pointer;
+}
+
+.catalog__button:hover,
+.catalog__button:active,
+.catalog__button:focus {
+    background-color: $dark-pink;
+    color: $white;
+    outline: none;
+}
