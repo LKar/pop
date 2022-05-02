@@ -1,0 +1,19 @@
+.search {
+    border-radius: 50px;
+    padding: 10px 60px 10px 22px;
+    background-color: transparent;
+    outline: 1px solid $grey;
+    margin-left: 41px;
+    border: none;
+    color: $light-grey;
+}
+
+.search::placeholder {
+    color: $grey;
+}
+
+.search:hover,
+.search:focus {
+   outline: 1px solid $dark-pink;
+   border: none;
+}
