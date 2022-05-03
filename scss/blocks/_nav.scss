@@ -2,6 +2,13 @@
     margin: 16px 0px 0 203px;
 }
 
+.nav__button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 13px;
+}
+
 .nav__link {
     color: $nav_text;
     text-decoration: none;
@@ -11,8 +18,8 @@
 }
 
 .nav-sub-item__list {
-   margin: 1px 0 20px 55px;
-   font-weight: 400;
+    margin: 1px 0 20px 55px;
+    font-weight: 400;
     font-size: 14px;
     line-height: 17px;
 }
