@@ -12,16 +12,12 @@
 .nav__link {
     color: $nav_text;
     text-decoration: none;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    @include font (14px, 17px, 400); 
 }
 
 .nav-sub-item__list {
     margin: 1px 0 20px 55px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    @include font (14px, 17px, 400); 
 }
 
 .nav-sub-item__item {
@@ -32,8 +28,6 @@
     text-transform: uppercase;
     color: $dark-pink;
     text-decoration: none;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    @include font (14px, 17px, 400); 
     margin: 24px 0 0 33px;
 }

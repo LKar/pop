@@ -48,33 +48,25 @@
 }
 
 .cart__item-header {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+    @include font (24px, 29px, 400);
     text-transform: uppercase;
     margin: 22px 3px 42px;
 }
 
 .cart__item-text {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
+    @include font (22px, 26px, 400);
     color: $cart-cross;
     margin-bottom: 6px;
 }
 
 .cart__item-price {
     color: $dark-pink;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
+    @include font (22px, 26px, 400);
 }
 
 .cart__item-number {
     border: 1px solid $grey;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
+    @include font (18px, 22px, 400);
     margin-left: 24px;
     padding: 1px 17px 2px 16px;
 }
@@ -86,9 +78,7 @@
 
 .cart__buttons-item {
     padding: 16px 40px;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
+    @include font (14px 17px 300);
     text-transform: uppercase;
     outline: 1px solid $sex;
     border: none;
@@ -109,9 +99,7 @@
 }
 
 .cart__registration-header {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
+    @include font (16px, 19px, 300);
     color: $black;
     text-transform: uppercase;
 }
@@ -132,9 +120,7 @@
     outline: 1px solid $sex;
     background-color: transparent;
     text-transform: uppercase;
-    font-weight: 300;
-    font-size: 11px;
-    line-height: 13px;
+    @include font (11px, 13px, 300);
     color: $sex;
     border: none;
 }
@@ -162,9 +148,7 @@
 }
 
 .cart__checkout-texts {
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 13px;
+    @include font (11px, 13px, 400);
     color: $sex;
     text-transform: uppercase;
 }
@@ -173,9 +157,7 @@
     margin: 12px 3px 21px 0;
     color: $sex;
     text-transform: uppercase;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
+    @include font (16px, 19px, 300);
 }
 
 .cart__checkout-prices {
@@ -184,9 +166,7 @@
 }
 
 .cart__checkout-priceb {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 19px; 
+    @include font (16px, 19px, 700); 
     color: $dark-pink;
     margin-left: 47px;
 }
@@ -201,9 +181,7 @@
 .cart__checkout-button {
     padding: 15px 42px;
     text-transform: uppercase;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
+    @include font (16px, 19px, 300); 
     color: $white;
     background-color: $dark-pink;
     border: none;
