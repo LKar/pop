@@ -2,7 +2,15 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 48px 0 48px 0;
+    margin: 48px 0 0 0;
+
+    @include tablet {
+        margin: 73px 0 0 0; 
+    }
+
+    @include mobile {
+        margin: 64px 0 0 0; 
+    }
 }
 
 .catalog__item {
@@ -12,6 +20,10 @@
     background-color: $light-grey;
     margin: 0 0 30px 0;
     text-align: left;
+
+    @include tablet {
+    margin: 0 0 16px 0;
+    }
 }
 
 .button__cart {
@@ -25,9 +37,7 @@
     padding: 8px 16px 11px 7px;
     text-align: center;
     color: $white;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    @include font (14px, 17px, 400); 
     cursor: pointer;
     fill: $white;
 }
@@ -58,7 +68,7 @@
 
 .button__cart:active {
 color: $dark-pink;
-border: 1PX SOLID $dark-pink;
+border: 1px solid $dark-pink;
 fill: $dark-pink;
 }
 
@@ -67,26 +77,20 @@ fill: $dark-pink;
 }
 
 .catalog__title {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 36px;
+    @include font (30px, 36px, 400); 
     color: $black;
     text-align: center;
 }
 
 .catalog__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
+    @include font (14px, 17px, 400); 
     color: $grey;
     text-align: center;
     margin: 6px 0 0 0;
 }
 
 .catalog__item-link {
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 16px;
+    @include font (13px, 16px, 400); 
     text-decoration: none;
     text-transform: uppercase;
     color: $black;
@@ -99,18 +103,14 @@ fill: $dark-pink;
 
 .catalog__description {
     color: $dark-grey;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
+    @include font (14px, 17px, 300); 
     margin: 12px 0 18px 18px;
 }
 
 .catalog__price {
     margin: 0 0 18px 20px;
     color: $dark-pink;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    @include font (16px, 19px, 400); 
 }
 
 .catalog__button-wrp {
@@ -119,14 +119,21 @@ fill: $dark-pink;
 }
 
 .catalog__button {
-    font-size: 16px;
-    line-height: 19px;
+    @include font (16px, 19px, 400); 
     color: $dark-pink;
     background-color: transparent;
     padding: 15px 39px;
     border: 1px solid $dark-pink;
-    margin: 0 0 95px;
+    margin: 32px 0 95px;
     cursor: pointer;
+
+    @include tablet {
+        margin: 16px 0 65px;
+    }
+
+    @include mobile {
+        margin: 25px 0 96px;
+    }
 }
 
 .catalog__button:hover,

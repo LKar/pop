@@ -1,11 +1,16 @@
 .search {
     border-radius: 50px;
-    padding: 10px 60px 10px 22px;
+    padding: 15px 60px 14px 52px;
     background-color: transparent;
     outline: 1px solid $grey;
-    margin-left: 41px;
     border: none;
     color: $light-grey;
+    margin-left: -33px;
+
+    @include mobile {
+        padding: 10px 0 10px 43px;
+        margin-left: -34px;
+    }
 }
 
 .search::placeholder {
@@ -14,6 +19,6 @@
 
 .search:hover,
 .search:focus {
-   outline: 1px solid $dark-pink;
-   border: none;
+    outline: 1px solid $dark-pink;
+    border: none;
 }
