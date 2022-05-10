@@ -16,7 +16,11 @@
     flex-grow: 1;
     padding: 0 0 0 92px;
     display: flex; 
-    align-items: center;
+    align-items: center;    
+
+    @include tablet {
+        padding: 0 0 0 68px;
+    }
 
     @include mobile {
         min-height: 363px;
@@ -26,6 +30,7 @@
 .brand__title {
     @include font (48px, 58px, 900);
     text-transform: uppercase;
+    position: relative;
 
     @include tablet {
         @include font (44px, 52px, 900);
@@ -34,6 +39,25 @@
     @include mobile {
         @include font (38px, 45px, 900);
         margin-right: 47px;
+    }
+}
+
+.brand__title::before {
+    content: "";
+    width: 12px;
+    height: 92px;
+    background-color: $dark-pink;
+    position: absolute;
+    left: -27px;
+    top: 7px;
+
+    @include tablet {
+        top: -5px;
+    }
+
+    @include mobile {
+        height: 61px;
+        top: 7px;
     }
 }
 
@@ -56,7 +80,7 @@
 
 .brand__img {
     @include tablet {
-        width: 385px;
+        width: 50%;
         min-height: 369px;
         object-fit: cover;
     }

@@ -6,21 +6,44 @@
 
 .registration-wrp {
     display: flex;
+
+    @include mobile {
+        flex-direction: column;
+    }
 }
 
 .registration__element-wrp {
     margin: 64px 0 96px 0;
+
+    @include mobile {
+        margin: 0;
+    }
+}
+
+.registration__element {
+    @include mobile {
+        margin: 40px 0 0 0;
+    }
 }
 
 .registration__list {
     margin: 0;
     list-style: none;
+
+    @include mobile {
+        margin-bottom: 100px;
+    }
 }
 
 .registration__item {
     position: relative;
     margin: 16px 0 16px 44px;
     @include font (24px, 29px, 300); 
+
+    @include tablet {
+        @include font (16px, 19px, 300); 
+        margin: 0 0 21px 44px;
+    }
 }
 
 .registration__item:before {
@@ -38,19 +61,36 @@
     @include font (24px, 29px, 300); 
     color: $black;
     text-transform: uppercase;
+
+    @include tablet {
+        @include font (16px, 19px, 300); 
+    }
 }
 
 .registration__text {
     color: $black;
     @include font (24px, 29px, 300); 
-    margin: 23px 0;
+    margin: 22px 0;
+
+    @include tablet {
+        @include font (16px, 19px, 300); 
+        margin: 32px 0 22px 0;
 }
+    }
 
 .input__text {
     padding: 13px 200px 16px 17px;
     margin: 20px 128px 0 0;
     outline: 1px solid $sex;
     border: none;
+
+@include tablet {
+    margin: 20px 22px 0 0;
+    }
+
+    @include mobile {
+        margin: 20px 0 0 0;
+    }
 }
 
 .input__text::placeholder {
@@ -106,6 +146,10 @@
     color: $white;
     border: none;
     fill: $white;
+
+    @include mobile {
+        margin-bottom: 40px;
+    }
 }
 
 .registration__button:hover,
