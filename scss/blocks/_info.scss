@@ -14,6 +14,8 @@
 
 .info__list {
     display: flex;
+    align-items: end;
+    
     @include tablet { 
         flex-direction: column;
         justify-content: center;
@@ -72,6 +74,7 @@
 
 .info__header {
     color: $info;
+    margin: 25px 0 19px 0;
     @include font (20px, 24px, 400); 
 
     @include tablet {
