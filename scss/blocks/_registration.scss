@@ -1,13 +1,12 @@
 .registration__header-wrp {
     background-color: $registration;
     min-height: 148px;
-    display: flex;
 }
 
 .registration-wrp {
     display: flex;
 
-    @include mobile {
+    @include tablet-mobile-mid-width {
         flex-direction: column;
         align-items: center;
     }
@@ -85,6 +84,9 @@
     outline: 1px solid $sex;
     border: none;
 
+@include tablet-mobile {
+    margin: 20px 84px 0 0;
+    }  
 @include tablet {
     margin: 20px 22px 0 0;
     }

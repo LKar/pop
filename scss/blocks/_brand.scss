@@ -22,7 +22,7 @@
         padding: 0 0 0 68px;
     }
 
-    @include mobile {
+    @include tablet-mobile-mid-width {
         min-height: 363px;
         display: flex;
         justify-content: center;
@@ -81,13 +81,16 @@
 }
 
 .brand__img {
+    width: 50%;
+    object-fit: cover;
+
     @include tablet {
         width: 50%;
         min-height: 369px;
         object-fit: cover;
     }
 
-    @include mobile {
+    @include tablet-mobile-mid-width {
         display: none;
     }
 }

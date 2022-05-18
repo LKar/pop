@@ -20,7 +20,7 @@
 }
 
 .cart__item {
-    min-width: 652px;
+    min-width: 57%;
     background-color: $white;
     display: flex;
     box-sizing: border-box;
@@ -28,11 +28,11 @@
     box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
 
     @include tablet {
-        min-width: 734px;
+        min-width: 95.5%;
     }
 
     @include mobile {
-        min-width: 358px;
+        min-width: 95.5%;
     }
 }
 
@@ -184,10 +184,15 @@
 .cart__registration-area {
     height: 45px;
     padding: 0px 209px 0px 12px;
+    width: 31%;
     margin-top: 20px;
     border-radius: 0;
     outline: 1px solid $sex;
     border: none;
+
+    @include tablet {
+        width: 31.5%;
+    }
 }
 
 .cart__registration-button {
@@ -219,7 +224,7 @@
 }
 
 .cart__checkout {
-    width: 360px;
+    width: 95%;
     height: 214px;
     background-color: $checkout-fon;
     display: flex;
@@ -227,6 +232,10 @@
     align-items: end;
     padding: 39px 34px 43px;
     box-sizing: border-box;
+
+    @include tablet {
+        width: 31.5%;
+    }
 
     @include mobile {
         margin: 0 0 96px;
@@ -267,7 +276,7 @@
 .cart__checkout-button {
     padding: 15px 38px;
     text-transform: uppercase;
-    @include font (16px, 19px, 300); 
+    @include font (14px, 19px, 300); 
     color: $white;
     background-color: $dark-pink;
     border: none;

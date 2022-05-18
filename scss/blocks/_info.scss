@@ -15,6 +15,12 @@
 .info__list {
     display: flex;
     align-items: end;
+
+    @include tablet-mobile {
+        min-height: 610px;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
     
     @include tablet { 
         flex-direction: column;
@@ -70,6 +76,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .info__header {
@@ -84,13 +91,14 @@
 
 .info__text {
     color: $info;
+    width: 360px;
     @include font (14px, 17px, 300); 
 
     @include tablet {
-        width: 360px;
+        width: 60%;
     }
 
-    @include tablet {
-        width: 347px;
+    @include mobile {
+        width: 97%;
     }
 }
