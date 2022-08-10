@@ -77,12 +77,12 @@
     text-transform: uppercase;
     color: $dark-pink;
     @include font (24px, 29px, 400); 
-    display: flex;
-    padding-top: 60px;
-    
-    @include mobile {
-    justify-content: center;
+
+    @include tablet-mobile-mid-width {
+        justify-content: center;
     }
+    
+    
 }
 
 .header__name {
