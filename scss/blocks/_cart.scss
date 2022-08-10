@@ -8,7 +8,7 @@
 }
 
 .cart__product {
-    margin: 96px 128px 128px 0;
+    margin: 96px 106px 128px 0;
 
     @include tablet {
         margin: 59px 0px 64px 0;
@@ -27,6 +27,10 @@
     margin-bottom: 40px;
     box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
 
+    @include tablet-mobile {
+        min-width: 40%;
+    }
+
     @include tablet {
         min-width: 95.5%;
     }
@@ -38,16 +42,20 @@
 
 .cart__item-wrp {
     flex-direction: column;
-    margin-left: 32px;
+    padding-left: 31px;
+    min-width: 34%;
+
+    @include tablet-mobile {
+        min-width: 25%;
+    }
 
     @include mobile {
-        margin-left: 17px;
+        padding-left: 17px;
     }
 }
 
 .cart__button-cross {
     display: flex;
-    justify-content: space-between;
     background: none;
     border: none;
 }
@@ -64,7 +72,7 @@
     color: $cart-cross;
     height: 18px;
     width: 18px;
-    margin: 28px 22px 0 90px;
+    margin: 22px 13px 0 54px;
     cursor: pointer;
 
     @include mobile {
@@ -75,11 +83,15 @@
 }
 
 .cart__img {
-    width: 262px;
+    min-width: 22%;
     height: 306px;
 
+    @include tablet-mobile {
+        min-width: 15%;
+    }
+
     @include mobile {
-        width: 50%;
+        min-width: 50%;
         height: 50%
     }
 }
@@ -87,7 +99,7 @@
 .cart__item-header {
     @include font (24px, 29px, 400);
     text-transform: uppercase;
-    margin: 22px 3px 42px 0;
+    margin: 22px 0px 42px 0;
     width: 262px;
 
     @include mobile {
@@ -183,8 +195,8 @@
 
 .cart__registration-area {
     height: 45px;
-    padding: 0px 209px 0px 12px;
-    width: 31%;
+    padding: 0px 0px 0px 12px;
+    width: 92%;
     margin-top: 20px;
     border-radius: 0;
     outline: 1px solid $sex;

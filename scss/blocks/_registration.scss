@@ -1,6 +1,8 @@
 .registration__header-wrp {
     background-color: $registration;
     min-height: 148px;
+    display: flex;
+    align-items: center;
 }
 
 .registration-wrp {

@@ -1,0 +1,17 @@
+.product__nav {
+text-decoration: none;
+@include font (14px, 17px, 300);
+color: $cart-cross;
+text-transform: uppercase;
+}
+
+.product__activ_link {
+color: $dark-pink;
+@include font (14px, 17px, 700);
+}
+
+.product__header {
+    align-items: center;
+display: flex;
+justify-content: space-between;
+}
